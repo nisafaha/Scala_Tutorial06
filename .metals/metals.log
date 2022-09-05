@@ -1,0 +1,493 @@
+2022.09.05 20:51:52 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Nisaf\Desktop\Scala Tutorial 6\.metals\lsp.trace.json or C:\Users\Nisaf\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.09.05 20:51:56 INFO  logging to file C:\Users\Nisaf\Desktop\Scala Tutorial 6\.metals\metals.log
+2022.09.05 20:51:56 INFO  Started: Metals version 0.11.8 in workspace 'C:\Users\Nisaf\Desktop\Scala Tutorial 6' for client Visual Studio Code 1.71.0.
+2022.09.05 20:52:00 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.09.05 20:52:01 INFO  time: initialize in 4.86s
+2022.09.05 20:52:08 WARN  Build server is not auto-connectable.
+2022.09.05 20:52:08 WARN  no build tool detected in workspace 'C:\Users\Nisaf\Desktop\Scala Tutorial 6'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.09.05 20:52:08 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:52:23 INFO  no build target found for C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.09.05 20:52:47 INFO  time: code lens generation in 38s
+2022.09.05 20:56:44 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:56:47 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:56:50 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:56:53 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:56:55 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:56:57 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:57:01 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:57:07 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 20:57:12 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 8:57:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 79 out of bounds for length 79
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 79 out of bounds for length 79
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 79 out of bounds for length 79
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 21:38:18 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:38:23 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:38:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:38:35 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 9:38:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 81 out of bounds for length 81
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 81 out of bounds for length 81
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 81 out of bounds for length 81
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 21:38:59 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:01 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:04 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:07 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:09 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:12 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:17 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:19 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:21 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:24 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:26 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:29 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:30 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:33 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:34 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:37 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:38 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:39:39 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 9:39:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 120 out of bounds for length 120
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 120 out of bounds for length 120
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 120 out of bounds for length 120
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 21:41:07 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:41:11 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:41:15 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:41:20 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 9:41:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 141 out of bounds for length 141
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 141 out of bounds for length 141
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 141 out of bounds for length 141
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 21:47:16 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:17 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:21 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:27 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:30 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:36 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:38 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:48 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:49 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:55 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:56 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:47:58 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 9:48:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 391 out of bounds for length 391
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 391 out of bounds for length 391
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 391 out of bounds for length 391
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 21:54:17 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:54:18 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:54:24 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:54:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 9:54:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 2117 out of bounds for length 2117
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 2117 out of bounds for length 2117
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 2117 out of bounds for length 2117
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 21:54:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 21:54:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:15:18 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:15:23 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 10:15:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 2125 out of bounds for length 2125
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 2125 out of bounds for length 2125
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 2125 out of bounds for length 2125
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 22:15:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:16:12 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:16:18 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:16:19 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:16:19 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 22:19:15 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:03:04 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:03:29 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 11:03:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 846 out of bounds for length 846
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 846 out of bounds for length 846
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 846 out of bounds for length 846
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 23:03:31 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:03:31 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:04:26 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:04:32 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 11:04:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 821 out of bounds for length 821
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 821 out of bounds for length 821
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 821 out of bounds for length 821
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 23:04:33 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:04:33 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:04:33 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 11:16:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 558
+2022.09.05 23:22:40 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:22:42 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:22:42 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:22:42 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:22:43 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.05 23:22:43 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 05, 2022 11:22:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 821 out of bounds for length 821
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 821 out of bounds for length 821
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 821 out of bounds for length 821
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.05 23:25:47 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.06 00:02:21 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.06 00:02:24 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.06 00:02:27 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.06 00:02:29 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+Sep 06, 2022 12:02:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 835 out of bounds for length 835
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 835 out of bounds for length 835
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 835 out of bounds for length 835
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.isScala3BlockWithoutOptionalBraces(FoldingRangeExtractor.scala:248)
+	at scala.meta.internal.parsing.FoldingRangeExtractor$Foldable$.unapply(FoldingRangeExtractor.scala:199)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:36)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:56)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:51)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.parsing.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:29)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$3(FoldingRangeProvider.scala:40)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForScala$2(FoldingRangeProvider.scala:33)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForScala(FoldingRangeProvider.scala:31)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$2(MetalsLanguageServer.scala:1705)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.09.06 00:02:30 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
+2022.09.06 00:02:30 WARN  no build target for: C:\Users\Nisaf\Desktop\Scala Tutorial 6\Question_01.scala
